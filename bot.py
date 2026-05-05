@@ -31,6 +31,7 @@ log = logging.getLogger("enigma")
 
 EXTENSIONS = [
     "cogs.admin",
+    "cogs.botinfo",
     "cogs.help",
     "cogs.leaderboard",
     "cogs.trivia.classic",
@@ -76,10 +77,11 @@ class EnigmaBot(commands.Bot):
     async def on_ready(self):
         log.info(f"Logged in as {self.user} (ID: {self.user.id})")
         log.info(f"Serving {len(self.guilds)} guild(s).")
+        guild_count = len(self.guilds)
         await self.change_presence(
             activity=discord.Activity(
-                type=discord.ActivityType.playing,
-                name="Trivia & Puzzles | /game list",
+                type=discord.ActivityType.watching,
+                name=f"{guild_count} guilds get smarter",
             )
         )
 
