@@ -38,7 +38,7 @@ from utils.scoring import (
     win_embed,
     info_embed,
     warn_embed,
-    GOLD, GREEN, RED, BLUE,
+    COLOUR_WARN as GOLD, COLOUR_WIN as GREEN, COLOUR_LOSS as RED, COLOUR_INFO as BLUE,
 )
 from config import POINTS, TIMING
 
