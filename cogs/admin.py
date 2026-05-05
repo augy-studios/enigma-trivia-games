@@ -42,7 +42,7 @@ class AdminCog(commands.Cog, name="Admin"):
     game_group = app_commands.Group(
         name="game",
         description="Configure Enigma games for this server.",
-        default_permissions=discord.Permissions(manage_guild=True),
+        default_permissions=discord.Permissions(manage_channels=True),
         guild_only=True,
     )
 

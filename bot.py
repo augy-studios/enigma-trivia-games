@@ -31,6 +31,7 @@ log = logging.getLogger("enigma")
 
 EXTENSIONS = [
     "cogs.admin",
+    "cogs.help",
     "cogs.leaderboard",
     "cogs.trivia.classic",
     "cogs.specialist.specialist",
