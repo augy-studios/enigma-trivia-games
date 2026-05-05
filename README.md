@@ -1,4 +1,4 @@
-# Enigma 🧩
+# <img src="/ETG-main.png" height="30" alt="icon"> Enigma
 
 A feature-rich Discord.py slash-commands bot with 35+ knowledge and puzzle games, full per-guild configuration, and a multi-dimensional leaderboard system. Runs on a Debian VPS with SQLite for storage and scheduling.
 
