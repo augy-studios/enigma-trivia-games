@@ -79,9 +79,8 @@ class EnigmaBot(commands.Bot):
         log.info(f"Serving {len(self.guilds)} guild(s).")
         guild_count = len(self.guilds)
         await self.change_presence(
-            activity=discord.Activity(
-                type=discord.ActivityType.watching,
-                name=f"{guild_count} guilds get smarter",
+            activity=discord.CustomActivity(
+                name=f"Testing the knowledge of {guild_count} guilds",
             )
         )
 
